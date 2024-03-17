@@ -646,6 +646,8 @@ ul {
   margin-bottom: 34px;
   margin-left: 24px;
   margin-right: 24px;
+  font-weight: 500px;
+  font-size: 16px;
 }
 .modal-form {
   color: #2e2f42;
@@ -658,6 +660,7 @@ input {
   border-radius: 4px;
   margin-left: 24px;
   margin-right: 24px;
+  padding-left: 45px;
 }
 label {
   display: flex;
@@ -666,6 +669,7 @@ label {
   margin-top: 8px;
   margin-left: 24px;
   margin-right: 24px;
+  color: #8e8f99;
 }
 .input-form {
   margin-left: 24px;
@@ -683,7 +687,7 @@ input:focus {
   border-color: #4d5ae5;
 }
 .privacypolicy {
-  width: 338px;
+  width: 400px;
   height: 16px;
   font-family: var(--global-font-family);
   size: 12px;
@@ -699,4 +703,96 @@ input:focus {
 }
 .modal-form-checkbox {
   display: flex;
+}
+:hover,
+.comment-textarea:focus {
+  border-color: #4d5ae5;
+}
+.comment-textarea {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name-icon {
+  position: absolute;
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 15px;
+}
+.name-icon:hover,
+.name-icon:focus {
+  fill: #4d5ae5;
+}
+.name-icon {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-send {
+  padding: 16px, 32px, 16px, 32px;
+  cursor: pointer;
+  width: 160px;
+  height: 56px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  outline: none;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+  margin-right: 35px;
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-weight: 500px;
+}
+.btn-send-style {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--global-font-family);
+}
+.name-label-footer {
+  padding-left: 15px;
+  margin-top: 10px;
+  width: 264px;
+  height: 40px;
+}
+.footer-form {
+  display: contents;
+}
+.modal-form-footer {
+  margin-top: 85px;
+}
+
+.btn-subscribe-footer {
+  top: 140px;
+  left: 1116px;
+  padding: 8px 24px 8px 24px;
+  gap: 16px;
+  border-radius: 4px;
+  color: #2e2f42;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border: none;
+  width: 165px;
+  height: 40px;
+  text-align: left;
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-weight: 500px;
+}
+.p-subscribe {
+  margin-top: 10px;
+  color: #ffffff;
+}
+.btn-subscribe-footer:hover,
+.btn-subscribe-footer:focus {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-btn-footer {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 19px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

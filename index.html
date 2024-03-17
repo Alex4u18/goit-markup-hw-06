@@ -59,42 +59,49 @@
 
                 <p class="p-form">Leave your contacts and we will call you back</p>
                 <div class="modal-form">
-                  <label for="name">Name</label>
-                  <input class="input-form" type="text" id="name" name="name">
+
+                  <label clas="name-label"> Name
+                    <svg class="name-icon" width="25px" height="25px">
+                      <use href="./icons/symbol-defs-modal.svg.svg#icon-person"></use>
+                    </svg>
+                    <input type="text">
+                  </label>
+                </div>
+
+                <div class="modal-form">
+                  <label clas="name-label"> Phone
+                    <svg class="name-icon" width="25px" height="25px">
+                      <use href="./icons/symbol-defs-modal.svg.svg#icon-phone"></use>
+                    </svg>
+                    <input type="text">
+                  </label>
+                </div>
+
+                <div class="modal-form">
+                  <label clas="name-label"> Email
+                    <svg class="name-icon" width="25px" height="25px">
+                      <use href="./icons/symbol-defs-modal.svg.svg#icon-email"></use>
+                    </svg>
+                    <input type="text">
+                  </label>
                 </div>
                 <div class="modal-form">
-                  <label for="phone">Phone</label>
-                  <input  class="input-form" type="text" id="phone" name="phone">
-                </div>
-                <div class="modal-form">
-                  <label for="email">Email</label>
-                  <input class="input-form" type="text" id="email" name="email">
-                </div>
-                <div class="modal-form">
-                  <label for="comment">Comment
-                    <textarea name="comment" rows="5" placeholder="Text input"></textarea>
+                  <label class="comment" for="comment">Comment
+                    <textarea class="comment-textarea" name="comment" rows="5" placeholder="Text input"></textarea>
                   </label>
                   <div class="modal-form-checkbox">
 
-                  <input class="checkbox" type="checkbox" id="privacypolicy" name="privacypolicy" value="policy">
-                  <label class="privacypolicy"  for="privacypolicy"> I accept the terms and conditions of the Privacy Policy</label><br>
-</div>
-
-                  
+                    <input class="checkbox" type="checkbox" id="privacypolicy" name="privacypolicy" value="policy">
+                    <label class="privacypolicy" for="privacypolicy"> I accept the terms and conditions of the <a
+                        href="https://www.google.co.uk/" target="_blank"> <span> Privacy Policy</span></a></label><br>
+                  </div>
+                  <div class="btn-send-style">
+                  <button class="btn-send" type="submit">Send</button>
+                </div>
                 </div>
                 <!-- <input type="submit" value="Submit"> -->
               </form>
             </div>
-
-
-
-
-
-
-
-
-
-
             <button class="close-btn" data-modal-close>
               <svg class="close-icons" width="24px" height="24px">
                 <use href="./icons/symbol-defs-close.svg#icon-close"></use>
@@ -446,6 +453,16 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="modal-form-footer">
+          <p class="p-subscribe">Subscribe</p>
+          <label class="footer-form"> 
+            <input class="name-label-footer" type="text" placeholder="Email">
+            <button class="btn-subscribe-footer" type="submit">Subscribe</button>
+            <svg class="svg-btn-footer" width="24px" height="24px">
+              <use href="./icons/symbol-defs-frame.svg.svg#icon-Frame"></use>
+            </svg>
+          </label>
         </div>
       </section>
     </div>
